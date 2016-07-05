@@ -55,20 +55,20 @@ public static void Walk(){
 	}
 	if(Direction == 0 && Moving == true ){
 		System.out.println("Walking North");
-		  getPlayers().get(0).setY(y -= speed * Delta());
+		  getPlayers().get(0).setY(y -= speed * Time.Delta());
 		}
 	if(Direction == 1 && Moving == true ){
 		System.out.println("Walking East");
-		getPlayers().get(0).setX(x += speed * Delta());
+		getPlayers().get(0).setX(x += speed * Time.Delta());
 		
 		}
 	if(Direction == 2 && Moving == true ){
 		System.out.println("Walking South");
-		getPlayers().get(0).setY(y += speed * Delta());
+		getPlayers().get(0).setY(y += speed * Time.Delta());
 		}
 	if(Direction == 3 && Moving == true ){
 		System.out.println("Walking West");
-		getPlayers().get(0).setX(x -= speed * Delta());
+		getPlayers().get(0).setX(x -= speed * Time.Delta());
 		}
 	if(Direction == 0 && Moving == false ){
 		System.out.println("Standing North");
@@ -106,7 +106,7 @@ public static void Inputs(){
 		}
 
     public static void draw(){
-    	DrawQuadTex(QuickLoad(tex), x, y, width, height);
+    	Draw.DrawQuadTex(Draw.QuickLoadTexture(tex), x, y, width, height);
     }
 
 	

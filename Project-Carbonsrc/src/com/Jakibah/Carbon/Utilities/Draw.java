@@ -102,20 +102,20 @@ public class Draw {
 		return tex;
 	}
 
-	public static Texture QuickLoadTexture(String name, String path) {
+	public static Texture QuickLoadTexture(String name) {
 		Texture tex = null;
-		tex = loadTexture("com/Jakibah/Carbon/Res/textures/" + path + name
+		tex = loadTexture("com/Jakibah/Carbon/Res/textures/"  + name
 				+ ".png", "PNG");
 		return tex;
 
 	}
 
-	public static Audio QuickLoadAudio(String name, String path) {
+	public static Audio QuickLoadAudio(String name) {
 		Audio aud = null;
 		try {
 			aud = AudioLoader.getAudio("WAV", ResourceLoader
 					.getResourceAsStream("com/Jakibah/Carbon/Res/sounds/"
-							+ path + name + ".wav"));
+							 + name + ".wav"));
 		} catch (IOException e) {
 
 			e.printStackTrace();
