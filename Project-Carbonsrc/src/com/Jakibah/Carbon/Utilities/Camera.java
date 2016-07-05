@@ -1,6 +1,5 @@
 package com.Jakibah.Carbon.Utilities;
 
-import org.lwjgl.opengl.GL11;
 import org.lwjgl.util.glu.GLU;
 
 import com.Jakibah.Carbon.Data.Player;
