@@ -17,7 +17,8 @@ public class Camera {
 	public void update(){
 		Camera.setX(target.getX());
 		Camera.setY(target.getY());
-		GL11.glTranslatef(x, y, 0.0f);
+		
+		GL11.glTranslatef(-x + Display.getWidth() / 2, -y + Display.getHeight() / 2, 0.0f);
 	}
 
 
