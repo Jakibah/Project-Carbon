@@ -3,6 +3,7 @@ package com.Jakibah.Carbon.Data;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.GL11;
 
+import com.Jakibah.Carbon.Levels.Levels;
 import com.Jakibah.Carbon.Types.TileType;
 import com.Jakibah.Carbon.Utilities.*;
 
@@ -13,7 +14,7 @@ public class Main {
 		Draw.BeginSession();
         
 		Player p1 = new Player("Test", 100, 0, 0, 32, 32);
-		Tile testtile = new Tile(TileType.Test, "TestTile", 20, 28, 32, 32);
+		TileMap TM = new TileMap(Levels.TestMap);
 		Camera c = new Camera(p1, p1.getX(), p1.getY());
 		
 		
