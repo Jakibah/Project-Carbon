@@ -1,8 +1,6 @@
 package com.Jakibah.Carbon.Utilities;
 
 import org.lwjgl.opengl.GL11;
-import org.lwjgl.util.glu.GLU;
-
 import com.Jakibah.Carbon.Data.Player;
 
 
@@ -19,7 +17,7 @@ public class Camera {
 	public void update(){
 		Camera.setX(target.getX());
 		Camera.setY(target.getY());
-		GL11.glTranslatef(-x, -y, 0.0f);
+		GL11.glTranslatef(x, y, 0.0f);
 	}
 
 
