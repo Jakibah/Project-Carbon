@@ -14,6 +14,7 @@ public class Main {
         
 		Player p1 = new Player("Test", 100, 10, 10, 32, 32);
 		Tile testtile = new Tile(TileType.Test, "TestTile", 20, 28, 32, 32);
+		Camera c = new Camera(p1, 0, 0);
 		
 		
 		
@@ -22,6 +23,7 @@ public class Main {
 			Tile.handleTiles();
 			Time.update();
 			Player.handlePlayer();
+			c.update();
 			Display.update();
 			Display.sync(60);
 		}
