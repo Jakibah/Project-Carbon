@@ -22,4 +22,7 @@ public class TileMap {
 	public void setMap(int[] map) {
 		this.map = map;
 	}
+	public TileMap(){
+		
+	}
 }
