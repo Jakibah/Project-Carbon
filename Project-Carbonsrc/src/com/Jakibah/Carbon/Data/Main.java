@@ -14,7 +14,7 @@ public class Main {
 		Draw.BeginSession();
         
 		Player p1 = new Player("Test", 100, 0, 0, 32, 32);
-		TileMap TM = new TileMap(Levels.TestMap);
+		Tile t = new Tile(TileType.Test, "TestTile", 10, 10, 32, 32);
 		Camera c = new Camera(p1, p1.getX(), p1.getY());
 		
 		
